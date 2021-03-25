@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "StudentView";
+}
+
+<h2>StudentView</h2>
+
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>STUDENT</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>DateOfBirth</th>
+            <th>Place</th>
+            <th>Malayalam</th>
+            <th>Maths</th>
+            <th>English</th>
+        </tr>
+        <tr>
+            <td>@TempData["Name"]</td>
+            <td>@TempData["Email"]</td>
+            <td>@TempData["DateOfBirth"]</td>
+            <td>@TempData["Place"]</td>
+            <td>@TempData["Malayalam"]</td>
+            <td>@TempData["Maths"]</td>
+            <td>@TempData["English"]</td>
+        </tr>
+    </table>
+
+</body>
+</html>
